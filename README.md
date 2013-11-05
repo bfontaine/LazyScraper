@@ -21,7 +21,7 @@ Then we’ll add some hooks. A hook map a set of attributes to an URL with a
 parser.  This is used to ensure that a webpage is fetched & parsed only once,
 and only at the right time. Here, we’ll assume that each review has a product id
 we know, a product name, a score, and a text. They are all located on the
-samepage, but LazyScraper also support hooks on multiple URLs.
+same page, but LazyScraper also support hooks on multiple URLs.
 
 ```rb
 class FooBarReview < LazyScraper::Entity
