@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'nokogiri', '~> 1.5.9'
+gem 'nokogiri', '~> 1.6.1'
 
 group :test do
   gem 'simplecov', :require => false
