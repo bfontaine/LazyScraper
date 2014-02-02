@@ -2,7 +2,7 @@
 
 LazyScraper is the easy way to define lazy entity-oriented Web scrapers.
 
-Note: This is a pre-alpha release.
+Note: This is only a proof-of-concept.
 
 ## Usage
 
