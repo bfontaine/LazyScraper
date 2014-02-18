@@ -3,7 +3,7 @@
 
 require 'fakeweb'
 
-FakeWeb.allow_net_connect = false
+FakeWeb.allow_net_connect = %r[^https?://coveralls\.io]
 
 # This simulate a fake website called FooBar,
 # with users' profiles at
