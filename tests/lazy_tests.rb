@@ -1,9 +1,11 @@
 #! /usr/bin/env ruby
 # -*- coding: UTF-8 -*-
 
+require_relative './fake_responses'
+
 class FooBarUser < LazyScraper::Entity
   attr_hook 'http://foo.bar/user/:id',
-    :name, :shortbio :counts do |doc, attrs|
+    :name, :shortbio, :counts do |doc, attrs|
 
     attrs[:name] = doc.css('h2').text.sub(/'s profile$/, '')
     attrs[:shortbio] = doc.css('h2 + p').text
@@ -24,6 +26,4 @@ class FooBarUser < LazyScraper::Entity
 end
 
 class LazyScraper_test < Test::Unit::TestCase
-
-
 end

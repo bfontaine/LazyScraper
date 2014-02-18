@@ -3,7 +3,7 @@
 
 require 'fakeweb'
 
-FakWeb.allow_net_connect = false
+FakeWeb.allow_net_connect = false
 
 # This simulate a fake website called FooBar,
 # with users' profiles at

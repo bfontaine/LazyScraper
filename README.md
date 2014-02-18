@@ -1,5 +1,8 @@
 # LazyScraper
 
+[![Build Status](https://travis-ci.org/bfontaine/LazyScraper.png)](https://travis-ci.org/bfontaine/LazyScraper)
+[![Coverage Status](https://coveralls.io/repos/bfontaine/LazyScraper/badge.png)](https://coveralls.io/r/bfontaine/LazyScraper)
+
 LazyScraper is the easy way to define lazy entity-oriented Web scrapers.
 
 Note: This is only a proof-of-concept.

@@ -1,13 +1,16 @@
 #! /usr/bin/env ruby
 # -*- coding: UTF-8 -*-
 
+require 'coveralls'
+Coveralls.wear!
+
 require 'test/unit'
 require 'simplecov'
-require_relative './fake_responses'
 
 test_dir = File.expand_path( File.dirname(__FILE__) )
 
-SimpleCov.start { add_filter '/tests/' } if ENV['COVERAGE']
+SimpleCov.formatter = Coveralls::SimpleCov::Formatter
+SimpleCov.start { add_filter '/tests/' }
 
 require_relative '../lib/lazyscraper.rb'
 
