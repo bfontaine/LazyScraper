@@ -11,6 +11,10 @@ module LazyScraper
   module Hookable
     @@hooks = []
 
+    def reset_hooks
+      @@hooks = []
+    end
+
     def attr_hook(path, *attrs, &parser)
       return unless block_given? && attrs.length > 0
 
@@ -40,8 +44,6 @@ module LazyScraper
     extend Hookable
 
     def initialize **attrs
-
-      # May be too much hacky
       meta = class << self; self; end
       attrs.each do |a,v|
         meta.send(:define_method, a) { v }
