@@ -57,3 +57,6 @@ lazy_review.text  # this fetches the page and return the text
 lazy_review.score # this returns the score without fetching the page again
 ```
 
+## Requirements
+
+* Ruby 2.x
