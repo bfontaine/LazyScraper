@@ -43,7 +43,7 @@ module LazyScraper
   class Entity
     extend Hookable
 
-    def initialize **attrs
+    def initialize(**attrs)
       meta = class << self; self; end
       attrs.each do |a,v|
         meta.send(:define_method, a) { v }
